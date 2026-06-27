@@ -144,37 +144,32 @@ synthetic-drone-detection/
 ├── submission_report.md          # Competition report
 │
 ├── 📂 Generated During Execution
-│   │
-│   ├── combined_dataset/
-│   │   ├── images/
-│   │   │   ├── train/
-│   │   │   └── val/
-│   │   ├── labels/
-│   │   │   ├── train/
-│   │   │   └── val/
-│   │   └── data.yaml
-│   │
-│   ├── runs/
-│   │   └── detect/
-│   │       └── drone_detection_challenge/
-│   │           └── yolov8_synthetic/
-│   │               ├── weights/
-│   │               │   ├── best.pt
-│   │               │   └── last.pt
-│   │               ├── results.png
-│   │               ├── confusion_matrix.png
-│   │               ├── BoxPR_curve.png
-│   │               ├── BoxF1_curve.png
-│   │               └── val_batch0_pred.jpg
-│   │
-│   └── Dataset Files (download separately)
-│       ├── rural_dataset.zip
-│       └── urban_dataset.zip
-│
-└── assets/ (Optional)
-    ├── architecture.png
-    ├── training_results.png
-    └── prediction_examples.png
+    │
+    ├── combined_dataset/
+    │   ├── images/
+    │   │   ├── train/
+    │   │   └── val/
+    │   ├── labels/
+    │   │   ├── train/
+    │   │   └── val/
+    │   └── data.yaml
+    │
+    ├── runs/
+    │   └── detect/
+    │       └── drone_detection_challenge/
+    │           └── yolov8_synthetic/
+    │               ├── weights/
+    │               │   ├── best.pt
+    │               │   └── last.pt
+    │               ├── results.png
+    │               ├── confusion_matrix.png
+    │               ├── BoxPR_curve.png
+    │               ├── BoxF1_curve.png
+    │               └── val_batch0_pred.jpg
+    │
+    └── Dataset Files (download separately)
+        ├── rural_dataset.zip
+        └── urban_dataset.zip
 ```
 
 ---
