@@ -132,35 +132,49 @@ flowchart TD
 
 ```
 synthetic-drone-detection/
-├── data_prep.py              # Extract, merge, split and format datasets
-├── train.py                  # YOLOv8 model training script
-├── evaluate.py               # Evaluation and metrics reporting script
-├── requirements.txt          # Python dependencies
-├── submission_report.md      # Final submission report with metrics and links
 │
-├── combined_dataset/         # Auto-generated after running data_prep.py
-│   ├── images/
-│   │   ├── train/            # 48 training images (Rural + Urban)
-│   │   └── val/              # 12 validation images
-│   ├── labels/
-│   │   ├── train/            # YOLO .txt label files
-│   │   └── val/
-│   └── data.yaml             # YOLO dataset config (paths + class names)
+├── README.md                     # Project documentation
+├── .gitignore                    # Ignore generated files
+├── requirements.txt              # Python dependencies
 │
-├── runs/                     # Auto-generated after running train.py
-│   └── detect/
-│       └── drone_detection_challenge/
-│           └── yolov8_synthetic/
-│               ├── weights/
-│               │   ├── best.pt       # Best model checkpoint
-│               │   └── last.pt       # Final epoch checkpoint
-│               ├── results.png       # Training loss curves
-│               ├── confusion_matrix.png
-│               ├── BoxPR_curve.png   # Precision-Recall curve
-│               └── BoxF1_curve.png   # F1-score curve
+├── data_prep.py                  # Extract, merge, shuffle and split datasets
+├── train.py                      # YOLOv8 training script
+├── evaluate.py                   # Model evaluation and metrics
 │
-├── rural_dataset.zip         # Downloaded from Duality AI Vibe Sim
-└── urban_dataset.zip         # Downloaded from Duality AI Vibe Sim
+├── submission_report.md          # Competition report
+│
+├── 📂 Generated During Execution
+│   │
+│   ├── combined_dataset/
+│   │   ├── images/
+│   │   │   ├── train/
+│   │   │   └── val/
+│   │   ├── labels/
+│   │   │   ├── train/
+│   │   │   └── val/
+│   │   └── data.yaml
+│   │
+│   ├── runs/
+│   │   └── detect/
+│   │       └── drone_detection_challenge/
+│   │           └── yolov8_synthetic/
+│   │               ├── weights/
+│   │               │   ├── best.pt
+│   │               │   └── last.pt
+│   │               ├── results.png
+│   │               ├── confusion_matrix.png
+│   │               ├── BoxPR_curve.png
+│   │               ├── BoxF1_curve.png
+│   │               └── val_batch0_pred.jpg
+│   │
+│   └── Dataset Files (download separately)
+│       ├── rural_dataset.zip
+│       └── urban_dataset.zip
+│
+└── assets/ (Optional)
+    ├── architecture.png
+    ├── training_results.png
+    └── prediction_examples.png
 ```
 
 ---
